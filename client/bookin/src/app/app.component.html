@@ -1,0 +1,44 @@
+<div class="box flex">
+  <div class="room-availabilty">
+    <div class="mat-headline">Check Availability</div>
+    <div>
+      <mat-form-field>
+        <input matInput
+               type="text"
+               [formControl]="checkAvailabiltyDate"
+               placeholder="Date (yyyy-mm-dd)">
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-stroked-button
+              (click)="check()">Check</button>
+    </div>
+    <pre *ngIf="roomAvailabilityResponse"
+         class="response availabilty">Response: {{ roomAvailabilityResponse | json }}</pre>
+  </div>
+  <div class="book-room">
+    <div class="mat-headline">Book Room</div>
+    <div>
+      <mat-form-field>
+        <input matInput
+               type="text"
+               [formControl]="checkInDate"
+               placeholder="Date (yyyy-mm-dd)">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput
+               type="number"
+               [formControl]="numOfDays"
+               placeholder="Number of days">
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-stroked-button
+              (click)="book()">Book</button>
+    </div>
+    <pre *ngIf="bookingResponse"
+         class="response booking">Response: {{ bookingResponse | json }}</pre>
+  </div>
+</div>

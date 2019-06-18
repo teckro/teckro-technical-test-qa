@@ -1,0 +1,26 @@
+.box.flex {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-room, .room-availabilty {
+    padding: 20px;
+    margin: 20px;
+    min-width: 30vw;
+    background-color: #e4ffd3;
+}
+
+.room-availabilty {
+  background-color: #d1d7ff;
+}
+
+.response.booking {
+  padding: 5px;
+  background-color: #eeffe5;
+}
+.response.availabilty {
+  padding: 5px;
+  background-color: #e0dcff;
+}
